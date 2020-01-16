@@ -1,0 +1,20 @@
+[data-filters=root] {
+  padding: 10px 15px;
+  height: 20px;
+  text-align: center;
+  font-size: 15px;
+  border-top: 1px solid #e6e6e6;
+}
+
+[data-filters=counter] {
+  float: left;
+  text-align: left;
+
+  & > strong {
+    font-weight: 500;
+  }
+}
+
+[data-filters=button] {
+  cursor: pointer;
+}
