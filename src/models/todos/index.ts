@@ -5,9 +5,9 @@ export type TodoItem = {
   completed: boolean;
 };
 
-export const $list = createStore([]);
+export const $list = createStore<TodoItem[]>([]);
 
-export const $filteredList = createStore([]);
+export const $filteredList = createStore<TodoItem[]>([]);
 
 export const $count = $list.map(list => list.length);
 

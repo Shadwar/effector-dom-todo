@@ -2350,15 +2350,15 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
-effector-dom@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/effector-dom/-/effector-dom-0.0.2.tgz#d7c34e32035abf695d9564577711e1212a3a66a0"
-  integrity sha512-4US9k1HWZac1fdrzuCvTGNpRV+sEm18iEe43tqlbvVqPQ2mWTyylfZwy266etgFL0O6VgFsjbObVG2kIYr7zjg==
+effector-dom@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/effector-dom/-/effector-dom-0.0.6.tgz#ddf78723b6b4de650584ddf693170963265e3c30"
+  integrity sha512-iAraWsnu+FMzNYavtktWiXs+q3uKn0zttVeSg85W7FijTOsYH3weNzw9YK+Vr7XDemKH5bpHkTLGO1zzo67Itg==
 
-effector@^20.10.1:
-  version "20.10.1"
-  resolved "https://registry.yarnpkg.com/effector/-/effector-20.10.1.tgz#4fd226ffa608632e685433e1cec5b65d844ac559"
-  integrity sha512-xkKQwHebF6My3/gPKOaXhtrBlI1Z1CcsK6r08pqdo200r6+dJ+gfTkrXc2/X9E3N3DWRMXcPdcQ7EpBNNd5ucA==
+effector@^20.11.0:
+  version "20.11.0"
+  resolved "https://registry.yarnpkg.com/effector/-/effector-20.11.0.tgz#879d47dc39ee497a5d455015b27fc24ada62a9ae"
+  integrity sha512-fwCsGzVVvJEZxzsImxPFfMTdEJ1961Ej79DyLyFukuuX998LaUehsJ9hz0nMfMCNMkyyB24/g9RO+2Z52HMYWg==
   dependencies:
     symbol-observable "^1.2.0"
 
