@@ -1,4 +1,4 @@
-## EFFECTOR-DOM TODO test
+## EFFECTOR-DOM TODO example
 
 ```
 yarn
