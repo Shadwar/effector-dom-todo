@@ -10,6 +10,6 @@ export const FilterLabel = {
   [FilterType.complete]: 'Completed',
 }
 
-export const toggle = createEvent<FilterType>();
+export const toggled = createEvent<FilterType>();
 
-export const $active = restore(toggle, FilterType.all);
+export const $active = restore(toggled, FilterType.all);

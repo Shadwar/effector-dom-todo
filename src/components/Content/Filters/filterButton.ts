@@ -1,5 +1,5 @@
 import {h, spec} from 'effector-dom';
-import {FilterType, FilterLabel, $active, toggle} from '../../../models/filters';
+import {FilterType, FilterLabel, $active, toggled} from '../../../models/filters';
 import classes from 'todomvc-app-css/index.css';
 
 
@@ -13,7 +13,7 @@ export const FilterButton: IFilterButton = (type) => {
       data: {filters: 'button'},
       attr: {class: $active.map(active => active === type ? classes.selected : false)},
       text: FilterLabel[type],
-      handler: {click: toggle.prepend((e: MouseEvent) => type)}
+      handler: {click: toggled.prepend((e: MouseEvent) => type)}
     });
   })
 }

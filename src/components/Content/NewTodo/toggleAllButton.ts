@@ -7,6 +7,6 @@ export const ToggleAllButton = () => {
   h('section', () => {
     spec({data: {newTodo: 'toggleall'}});
     h('input', {attr: {class: classes["toggle-all"], type: 'checkbox'}});
-    h('label', {handler: {click: todos.toggleAll}});
+    h('label', {handler: {click: todos.allToggled}});
   });
 };

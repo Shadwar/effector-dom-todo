@@ -21,7 +21,7 @@ export const NewTodo: INewTodo = () => {
           });
 
           forward({
-            from: submit.filterMap(() => node.value !== '' ? ({ title: node.value, completed: false }) : undefined),
+            from: submit.filterMap(() => node.value !== '' ? node.value : undefined),
             to: todos.appended,
           });
         });

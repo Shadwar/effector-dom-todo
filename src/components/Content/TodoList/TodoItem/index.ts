@@ -1,5 +1,5 @@
 import {Store} from 'effector';
-import {h, spec, node} from 'effector-dom';
+import {h, spec, map} from 'effector-dom';
 import classes from 'todomvc-app-css/index.css'
 import * as todos from '../../../../models/todos';
 
@@ -13,16 +13,10 @@ export const TodoItem: ITodoItem = ({store, index}) => {
     h('div', () => {
       spec({attr: {class: classes.view}});
 
-      h('input', () => {
-        spec({
-          attr: {type: 'checkbox', class: classes.toggle},
-          handler: {click: todos.toggle.prepend((e: MouseEvent) => index)}
-        });
-
-        node(node => {
-          store.watch(item => node.checked = item.completed);
-        })
-      })
+      h('input', {
+        attr: {type: 'checkbox', class: classes.toggle, checked: store.map(item => item.completed)},
+        handler: {click: todos.toggled.prepend((e: MouseEvent) => index)}
+      });
 
       h('label', {text: store.map(item => item.title)});
 
